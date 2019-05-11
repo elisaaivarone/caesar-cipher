@@ -1,6 +1,6 @@
 body {
    background: url(lampada.png) no-repeat center fixed;
-   -webkit-background-size: cover;
+   
    }
    
    h2 {
@@ -35,13 +35,11 @@ body {
    text-align: center;
    }
    
-   .btn1 {
+   .btn1, .btn2 {
+   margin-top: 10px;
    margin-left: 60px;
    }
    
-   .btn2 {
-   margin-left: 70px;
-   }
    
    .encode {
    margin-top: 60px;
