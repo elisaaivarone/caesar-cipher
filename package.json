@@ -1,0 +1,23 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "## Prefácio",
+  "main": "src/cipher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisaaivarone/caesar-cipher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisaaivarone/caesar-cipher/issues"
+  },
+  "homepage": "https://github.com/elisaaivarone/caesar-cipher#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}

@@ -18,17 +18,34 @@ Para o desenvolvimento do sistema foi utilizado JavaScript. O programa funciona 
 1) Criar uma função "cipher" para criptografar a mensagem inserida:
 
 . Função (encodeCipher) criptografa, um parâmetro com a mensagem e outro com o deslocamento.
-. if e else if identifica letras maiúsculas e minúsculas e seus respectivos números correspondentes na tabela ASCII.
+. if e else identifica letras maiúsculas e minúsculas e seus respectivos números correspondentes na tabela ASCII.
 . Fórmula da cifra de cesar para criptografar a mensagem inserida.
 . O usuário recebe a mensagem cifrada.
 
 2) Criar a função "decipher" para descriptografar a mensagem inserida:
 
 . Função (decodeCipher) descriptografa, um parâmetro com a mensagem e outro com o deslocamento.
-. if e else if identifica letras maiúsculas e minúsculas e seus respectivos números correspondentes na tabela ASCII, fazendo o caminho inverso.
+. if e else identifica letras maiúsculas e minúsculas e seus respectivos números correspondentes na tabela ASCII, fazendo o caminho inverso.
 . Fórmula da cifra de cesar para descriptografar a mensagem inserida.
 . O usuário recebe a mensagem decifrada.
 
+
+## Fluxograma
+![flucograma](image/fluxograma.png)
+
+
+## Conclusão
+
+ * [x] README.md com explicações e desenho do projeto
+ * [x] Usar VanillaJS.
+ * [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser cifrado.
+ * [x] Mostrar o resultado da cifra corretamente.
+ * [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser descifrado.
+ * [x] Mostrar o resultado descifrado corretamente.
+ * [x] Permitir escolher o offset (deslocamento) a ser usado na cifragem/descifragem.
+ * [x] Implementa cipher.encode.
+ * [x] Implementa cipher.decode.
+ * [ ] Criar testes unitários.
 
 
 

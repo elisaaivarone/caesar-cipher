@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h2>Cifra de Cesar</h2>
+  </header>
+
+
+  <section class="encode">
+
+    <label for="offSet">Chave de deslocamento:</label>
+    <input type="number" id="offSet" value=""> <br><br>
+
+    <label for="messageEncode">Escreva a sua mensagem:</label> <br>
+    <textarea name="message" id="messageEncode" cols="30" rows="5"></textarea><br><br><br>
+    <button class="btn1" onclick="encode()">Cifrar</button>
+
+  </section>
   
-  
-     <header>
-       <h2>Cifra de Cesar</h2>
-      </header>
-    
+  <section class="decode">
 
-    <div id="encode">
-        
-        <label for="offSet">Chave de deslocamento:</label>
-        <input type="number" id="offSet" value=""> <br><br>
-        
-        <label for="messageEncode">Escreva a sua mensagem:</label> <br>
-        <textarea name="message"  id="messageEncode"  cols="40" rows="10"></textarea><br><br><br>
-        <input type="button" id="button1" class="button" value="Cifrar" onclick="encode()">
-      
+    <label for="offSet">Chave de deslocamento:</label>
+    <input type="number" id="offSet" value=""><br><br>
 
-    </div>
+    <label for="messageDecode">Escreva a sua mensagem cifrada:</label> <br>
+    <textarea name="message" id="messageDecode" cols="30" rows="5"></textarea><br><br><br>
+    <button class="btn2" onclick="decode()">Decifrar</button>
+
+  </section>
 
 
-    
-    <div id="decode">
 
-        <label for="offSet">Chave de deslocamento:</label>
-        <input type="number" id="offSet" value=""> <br><br>
-         <label for="messageDecode">Escreva a sua mensagem cifrada:</label> <br>
-         <textarea name="message"  id="messageDecode"  cols="40" rows="10"></textarea><br><br><br>
-        <input type="button" id="button2" class="button" value="Decifrar" onclick = "decode()">
+<script src="cipher.js"></script>
 
-     </div>
-     
-     
 
-    <script src="cipher.js"></script>
-   
-  
-  </body>
+</body>
+
 </html>
