@@ -45,7 +45,7 @@ Para o desenvolvimento do sistema foi utilizado JavaScript. O programa funciona 
  * [x] Permitir escolher o offset (deslocamento) a ser usado na cifragem/descifragem.
  * [x] Implementa cipher.encode.
  * [x] Implementa cipher.decode.
- * [ ] Criar testes unitários.
+ 
 
 
 
