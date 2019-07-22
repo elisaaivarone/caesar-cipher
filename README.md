@@ -31,7 +31,7 @@ Para o desenvolvimento do sistema foi utilizado JavaScript. O programa funciona 
 
 
 ## Fluxograma
-![flucograma](image/fluxograma.png)
+![flucograma](https://github.com/elisaaivarone/caesar-cipher-project/blob/master/src/image/fluxograma.png?raw=true)
 
 
 ## Conclusão
