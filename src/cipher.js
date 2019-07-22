@@ -1,52 +1,46 @@
-function encode() {
-  let message = document.getElementById('messageEncode'). value;
-  
-  let key = parseInt (document.getElementById('offSet'). value );
-  
-  let result = encodeCipher(message, key); 
-  document.getElementById('messageEncode').value = result;
-}
-  
-function encodeCipher(message, key) {
+encodeArea = () => {
+  const message = document.getElementById('messageEncode').value;
+  const offSet = parseInt(document.getElementById('offSet').value);
+  document.getElementById('messageEncode').value = encodeCipher(message, offSet);
+} 
+document.querySelector('#encode').addEventListener('click', encodeArea);
+
+encodeCipher = (message, offSet) => {
   let code = '';
-  let codeASCII = [];
-  
-  for (let i = 0; i < message.length; i++) {
-    codeASCII = message[i].charCodeAt();  
-    if (codeASCII >= 65 && codeASCII <= 90) {
-      code += String.fromCharCode(((codeASCII - 65 + (key % 26) + 26) % 26) + 65);
-    } else if (codeASCII >= 97 && codeASCII <= 122) {
-      code += String.fromCharCode(((codeASCII - 97 + (key % 26) + 26) % 26) + 97);
-    } else {
+  for (let i in message) {
+   const codeAsc = message.charCodeAt(i);
+    if (codeAsc >= 65 && codeAsc <= 90) {
+      code += String.fromCharCode(((codeAsc - 65 + (offSet % 26) + 26) % 26) + 65);
+    }else if (codeAsc >= 97 && codeAsc <= 122) {
+      code += String.fromCharCode(((codeAsc - 97 + (offSet % 26) + 26) % 26) + 97);
+    }else {
+      code += String.fromCharCode(codeAsc);
+    }
+  }
+  return code;
+}
+
+decodeArea = () => {
+  const message = document.getElementById('messageDecode').value;
+  const offSet = parseInt(document.getElementById('offSet').value);
+  document.getElementById('messageDecode').value = decodeCipher(message, offSet);
+}
+document.querySelector('#decode').addEventListener('click', decodeArea);
+
+decodeCipher = (message, offSet) => {
+  let code = '';
+  for (let i in message) {
+    let codeASCII= message.charCodeAt(i);
+    if (codeASCII>= 65 && codeASCII<= 90) {
+      code += String.fromCharCode(((codeASCII - 65 - (offSet % 26) + 26) % 26) + 65);
+    }else if (codeASCII>= 97 && codeASCII<= 122) {
+      code += String.fromCharCode(((codeASCII- 97 - (offSet % 26) + 26) % 26) + 97);
+    }else {
       code += String.fromCharCode(codeASCII);
     }
   }
   return code;
 }
-  
-function decode() {
-  let message = document.getElementById('messageDecode'). value;
 
-  let key = parseInt (document.getElementById('offSet'). value );
 
-  let result = decodeCipher(message, key); 
-  document.getElementById('messageDecode').value = result;
-}
-  
-function decodeCipher(message, key) {
-  let code = '';
-  let codeASCII = [];
-  
-  for (let i = 0; i < message.length; i++) {
-    codeASCII = message[i].charCodeAt();  
-  
-    if (codeASCII >= 65 && codeASCII <= 90) {
-      code += String.fromCharCode(((codeASCII - 65 - (key % 26) + 26) % 26) + 65);
-    } else if (codeASCII >= 97 && codeASCII <= 122) {
-      code += String.fromCharCode(((codeASCII - 97 - (key % 26) + 26) % 26) + 97);
-    } else {
-      code += String.fromCharCode(codeASCII);
-    }
-  }
-  return code;
-}
+

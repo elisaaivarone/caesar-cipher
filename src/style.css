@@ -1,53 +1,56 @@
 body {
-   background: url(lampada.png) no-repeat center fixed;
+  background: url(image/lampada.png);
+  width: 100%;
+}
    
-   }
+h2 {
+  text-align: center;   
+  font-family: monospace;
+  letter-spacing: 5px;
+  color: white;
+}
    
-   h2 {
-   text-align: center;   
-   font-family: monospace;
-   letter-spacing: 5px;
-   color: white;
-   }
+label {
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+}
    
-   label {
-   font-family: monospace;
-   font-size: 18px;
-   color: white;
-   }
+textarea {
+  font-family: 'Stylish', sans-serif;
+  color: black;
+  font-size: 18px;
+}
    
-   textarea {
-   font-family: 'Stylish', sans-serif;
-   color: black;
-   font-size: 18px;
-   }
+.btn1, .btn2 {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f5f0f0;
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.btn1:hover {
+  background-color: aquamarine;
+  font-size: 18px;
+ }
+
+.btn2:hover {
+  background-color: aquamarine;
+  font-size: 18px;
+}
+
+.encode,.decode {
+  display: inline-block;
+  padding: 4rem;
+  margin-top: 5rem;
+}
    
-   .btn1, .btn2 {
-   transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   background-color: #f5f0f0;
-   color: rgb(10, 10, 10);
-   font-size: 16px;
-   padding: 12px 25px;
-   border: none;
-   cursor: pointer;
-   border-radius: 5px;
-   text-align: center;
-   }
-   
-   .btn1, .btn2 {
-   margin-top: 10px;
-   margin-left: 60px;
-   }
-   
-   
-   .encode {
-   margin-top: 60px;
-   margin-left: 100px;
-   }
-   
-   .decode {
-   float: right;
-   margin-right: 250px;
-   }
+
      

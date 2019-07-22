@@ -17,23 +17,23 @@
 
   <section class='encode'>
 
-    <label for='offSet'>Chave de deslocamento:</label>
+    <label for='offSet'>Chave de deslocamento:</label><br>
     <input type='number' id='offSet' value=""> <br><br>
 
-    <label for='messageEncode'>Escreva a sua mensagem:</label> <br>
+    <label for='messageEncode'>Escreva a sua mensagem:</label><br>
     <textarea name='message' id='messageEncode' cols="30" rows="5"></textarea><br><br>
-    <button class="btn1" onclick='encode()'>Cifrar</button>
+    <input type="button" class="btn1" id="encode" value="Cifrar">
 
   </section>
   
   <section class='decode'>
 
-    <label for='offSet'>Chave de deslocamento:</label>
+    <label for='offSet'>Chave de deslocamento:</label><br>
     <input type="number" id='offSet' value=""><br><br>
 
     <label for='messageDecode'>Escreva a sua mensagem cifrada:</label> <br>
     <textarea name='message' id='messageDecode' cols="30" rows="5"></textarea><br><br>
-    <button class="btn2" onclick='decode()'>Decifrar</button>
+    <input type="button" class="btn2" id="decode" value="Decifrar">
 
   </section>
 
